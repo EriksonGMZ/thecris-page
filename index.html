@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Regalo Exclusivo</title>
+  <title>Regalo Exclusivo con Guía Visual</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -38,62 +38,82 @@
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
-    .instrucciones {
+    .visual-help {
+      margin-top: 40px;
       background: #fff3cd;
       border: 1px solid #ffeeba;
-      padding: 25px;
-      margin-top: 35px;
+      padding: 20px;
       border-radius: 10px;
-      text-align: left;
       max-width: 500px;
       width: 100%;
+      text-align: center;
     }
-    .instrucciones h2 {
-      font-size: 22px;
+    .visual-help h2 {
       color: #856404;
+      font-size: 22px;
       margin-bottom: 10px;
     }
-    .instrucciones ol {
-      font-size: 17px;
-      padding-left: 20px;
-      color: #856404;
+    .step {
+      position: relative;
+      margin-bottom: 30px;
     }
-    .video-container {
-      margin-top: 20px;
-      max-width: 300px;
-      width: 100%;
-    }
-    video {
-      width: 100%;
+    .step img {
+      width: 90%;
       border-radius: 10px;
-      display: block;
+      border: 2px solid #ddd;
+    }
+    .step::after {
+      content: "➤";
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 40px;
+      color: red;
+      animation: pulse 1s infinite;
+    }
+    .step:nth-child(3)::after {
+      top: 30%;
+      right: 20px;
+    }
+    .step p {
+      font-size: 17px;
+      color: #444;
+      margin-top: 8px;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.3); opacity: 0.5; }
+      100% { transform: scale(1); opacity: 1; }
     }
   </style>
 </head>
 <body>
-  <h1>🎁 ¡Tu regalo exclusivo está listo!</h1>
 
-  <!-- Video más pequeño -->
-  <div class="video-container">
-    <video controls autoplay muted playsinline>
-      <source src="2%20Video.mp4" type="video/mp4">
-      Tu navegador no soporta este video.
-    </video>
-  </div>
+  <h1>🎁 ¡Tu regalo exclusivo está listo!</h1>
 
   <p>Haz clic en el botón para continuar:</p>
 
-  <a class="boton" href="https://tenkafirehoy.teampelucaxd.com/category/carx-street/?utm_source=ThcriissCar&utm_medium=ThcriissCar&utm_campaign=ThcriissCar" target="_blank" rel="noopener noreferrer">Abrir ahora</a>
+  <a class="boton" href="https://tenkafirehoy.teampelucaxd.com/?utm_source=Thcriiss&utm_medium=Thcriiss&utm_campaign=Thcriiss" target="_blank" rel="noopener noreferrer">Abrir ahora</a>
 
-  <div class="instrucciones">
-    <h2>¿No se abre en TikTok?</h2>
-    <p>Sigue estos pasos para abrir la página en tu navegador:</p>
-    <ol>
-      <li>Toca los <strong>3 puntos</strong> en la esquina superior derecha.</li>
-      <li>Selecciona <strong>“Abrir en el navegador”</strong>.</li>
-      <li>Accede sin restricciones.</li>
-    </ol>
-    <p>Esto solo es necesario si TikTok bloquea el botón.</p>
+  <div class="visual-help">
+    <h2>¿No se abre desde TikTok? Mira esto 👇</h2>
+
+    <div class="step">
+      <img src="https://i.imgur.com/BmFteAW.jpeg" alt="Paso 1">
+      <p>1. Toca los <strong>3 puntos</strong> arriba a la derecha</p>
+    </div>
+
+    <div class="step">
+      <img src="https://i.imgur.com/gztDxPk.jpeg" alt="Paso 2">
+      <p>2. Selecciona <strong>“Abrir en el navegador”</strong></p>
+    </div>
+
+    <div class="step">
+      <img src="https://i.imgur.com/xVPdpnH.jpeg" alt="Paso 3">
+      <p>3. Dale click <strong>al botón verde</strong> y listo</p>
+    </div>
   </div>
+
 </body>
 </html>
