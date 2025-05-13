@@ -58,22 +58,28 @@
       padding-left: 20px;
       color: #856404;
     }
-    video {
+    .video-container {
       margin-top: 20px;
+      max-width: 300px;
+      width: 100%;
+    }
+    video {
+      width: 100%;
       border-radius: 10px;
-      max-width: 100%;
-      height: auto;
+      display: block;
     }
   </style>
 </head>
 <body>
   <h1>🎁 ¡Tu regalo exclusivo está listo!</h1>
 
-  <!-- Video insertado -->
-  <video controls autoplay muted playsinline>
-    <source src="1%20Video.mp4" type="video/mp4">
-    Tu navegador no soporta este video.
-  </video>
+  <!-- Video más pequeño -->
+  <div class="video-container">
+    <video controls autoplay muted playsinline>
+      <source src="1%20Video.mp4" type="video/mp4">
+      Tu navegador no soporta este video.
+    </video>
+  </div>
 
   <p>Haz clic en el botón para continuar:</p>
 
